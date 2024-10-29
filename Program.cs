@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
 
+            
             string statmentToPrint = "Hello Fucken World";
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(statmentToPrint);
@@ -77,6 +78,12 @@ this fuckin glaa
 you will die";
             Console.WriteLine(l);
 
+            
+
+            string name=" ";
+            Console.Write("please enter your name :\t");
+            name = Console.ReadLine();
+            Console.WriteLine($"Welcome {name} !");
 
 
 

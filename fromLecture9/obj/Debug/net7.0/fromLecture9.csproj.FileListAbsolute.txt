@@ -1,0 +1,15 @@
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\bin\Debug\net7.0\fromLecture9.exe
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\bin\Debug\net7.0\fromLecture9.deps.json
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\bin\Debug\net7.0\fromLecture9.runtimeconfig.json
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\bin\Debug\net7.0\fromLecture9.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\bin\Debug\net7.0\fromLecture9.pdb
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.csproj.AssemblyReference.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.GeneratedMSBuildEditorConfig.editorconfig
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.AssemblyInfoInputs.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.AssemblyInfo.cs
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.csproj.CoreCompileInputs.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\refint\fromLecture9.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.pdb
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\fromLecture9.genruntimeconfig.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\fromLecture9\obj\Debug\net7.0\ref\fromLecture9.dll
