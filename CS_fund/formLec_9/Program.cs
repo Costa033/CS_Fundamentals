@@ -148,6 +148,23 @@ namespace formLec_9
 
             //Lecture 17
 
+            /*
+            Console.Write("please enter a num to check it :\t");
+            string v = Console.ReadLine();
+            int num = int.Parse(v);
+
+            if (num == 0)
+                Console.WriteLine("Zero is not odd nor even");
+            else if (num % 2 == 0)
+                Console.WriteLine($"number {num} you entered is Even");
+            else
+                Console.WriteLine($"number {num} you entered is Odd");
+            */
+
+
+            //Lecture 18
+
+
 
 
 
