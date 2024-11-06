@@ -1,0 +1,12 @@
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\bin\Debug\net7.0\CSharp_Fundamentals.Core.deps.json
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\bin\Debug\net7.0\CSharp_Fundamentals.Core.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\bin\Debug\net7.0\CSharp_Fundamentals.Core.pdb
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\CSharp_Fundamentals.Core.csproj.AssemblyReference.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\CSharp_Fundamentals.Core.GeneratedMSBuildEditorConfig.editorconfig
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\CSharp_Fundamentals.Core.AssemblyInfoInputs.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\CSharp_Fundamentals.Core.AssemblyInfo.cs
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\CSharp_Fundamentals.Core.csproj.CoreCompileInputs.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\CSharp_Fundamentals.Core.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\refint\CSharp_Fundamentals.Core.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\CSharp_Fundamentals.Core.pdb
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\CSharp_Fundamentals.Core\obj\Debug\net7.0\ref\CSharp_Fundamentals.Core.dll

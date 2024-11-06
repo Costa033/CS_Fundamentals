@@ -1,4 +1,11 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
+using System.Reflection;
+using System.Runtime.Serialization.Formatters;
+using System.Text;
+using System.Transactions;
+
+using CSharp_Fundamentals.Core;
 
 namespace formLec_9
 {
@@ -48,7 +55,7 @@ namespace formLec_9
 
 
             /*
-            //Lecture 10
+                                                                  //Lecture 10
 
             // int a = 0;
             // int b = 50;
@@ -165,6 +172,509 @@ namespace formLec_9
             //Lecture 18
 
 
+            //Lecture 19
+            /*
+            int[] videos = { 5, 69, 8, 4, 1, 2, 3, 6 };
+            Console.WriteLine(videos[1]);
+            Array.Sort(videos);
+            Console.WriteLine(videos[1]);
+            Console.WriteLine("**************************************\n\n");
+
+            //int[] videos_2 = { };                   // Error because of the number of indexs
+            int[] videos_2 = new int[8];
+
+
+            Array.Copy(videos, videos_2, videos.Length);
+            Console.WriteLine(videos_2[1]);
+            */
+
+
+            //Lecture 20
+
+            /*
+            int x = 0;
+            for (int c=0;c<10;c+=2)
+            {
+                Console.WriteLine(x);
+                x++;
+            }
+            */
+
+            //Assignment 1
+
+            /*
+            // for printing Alphabet letters
+            string alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+            for (int i = 0; i < alphabet.Length;i++)
+            {
+                Console.WriteLine(alphabet[i]);
+            }
+
+            // for printing alphapet ASCII code
+            string alphabet2 = "Abcdefghijklmnopqrstuvwxyz";
+
+            for (int i = 0; i < alphabet2.Length; i++)
+            {
+                Console.WriteLine((int)alphabet[i]);
+            }
+
+
+            // for from 0 ---> 9 ASCII 
+            string nums = "0123456789";
+            for (int c=0;c<=9;c++)
+            {
+                Console.WriteLine((int)nums[c]);
+            }
+            */
+
+
+            //Assignment 2
+
+            /*
+            Console.WriteLine("please enter five number:");
+            int[] nums = new int[5];
+            string trans;
+            for (int i=0;i<5;i++)
+            {
+               trans = Console.ReadLine();
+                nums[i] = int.Parse(trans);
+            }
+
+            Console.WriteLine("the array u entered before sorting");
+
+            for(int i=0;i<5;i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+
+            Console.WriteLine("******************************\n\n");
+            Array.Sort(nums);
+            Console.WriteLine("the array u entered After sorting\n");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+
+            */
+
+
+
+            // Lecture 21
+
+            /*
+             
+            for(int i=1;i<=10;i++)
+            {
+                if (i % 2 == 0)
+                    Console.WriteLine($"{i} is Even");
+                else
+                    Console.WriteLine($"{i} is Odd");
+                
+            }
+
+            // the same code is :
+            for (int i = 1; i <= 10; i++)
+            {
+                string stat = (i % 2 == 0 ? $"{i} is Even" : $"{i} is Odd");
+
+                Console.WriteLine(stat);
+            }
+            */
+
+
+            //LECTURE 22
+
+            /*
+             
+            string nums = "123456789";
+            for(int i=0;i<9;i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+
+            // here we can use FOREACH
+            Console.WriteLine("\n *******************************************************\n\n with FOREACH\n");
+            foreach(char item in nums)
+            {
+                Console.WriteLine(item);
+            }
+
+            // for print ASCII
+
+            Console.WriteLine("\n *******************************************************\n\n with FOREACH Print ASCII\n");
+
+            foreach (int item2 in nums)
+            {
+                Console.WriteLine(item2);
+            }
+
+
+            foreach (char item3 in nums)
+                Console.WriteLine($"{item3} in ASCII = {(int)item3}");
+
+            */
+
+
+            //LECTURE 23
+
+            // Assignment 1
+
+            /*
+            Console.Write("pls enter the array size: ");
+
+            //string p = Console.ReadLine();
+            //int[] nums = new int[int.Parse(p)];
+
+            // in another way
+
+            int arrSize = int.Parse(Console.ReadLine());
+            int[] nums = new int[arrSize];
+            
+            //string trans;
+            for (int d= 0;d < nums.Length;d++)
+            {
+                Console.WriteLine($"enter the {d + 1} num in the array");
+                //trans = Console.ReadLine();
+                nums[d] = int.Parse(Console.ReadLine());
+            }
+
+             //int[] nums2 = new int[int.Parse(p)];
+            int[] nums2 = new int[nums.Length];
+            int u = 0;
+            for(int r=(nums.Length-1);r>=0;r--)
+            {
+                nums2[u] = nums[r];
+                u++;
+            }
+
+            int f = 1;
+            foreach (int item2 in nums)
+            {
+                Console.WriteLine($"the {f} item in array is: {item2}");
+                f++;
+            }
+            int fe = 1;
+            foreach (int item4 in nums2)
+            {
+                Console.WriteLine($"the {fe} item in array is: {item4}");
+                fe++;
+            }
+
+                                                    //Assignment 2
+
+            double sum = 0;
+            foreach (int itemAv in nums2)
+            {
+                sum += itemAv;
+            }
+
+            Console.WriteLine($"***********************************************\n\nthe Average of the array u entered is = {sum / arrSize}");
+
+            */
+
+
+            //LECTURE 24
+
+
+            //LECTURE 25
+            /*
+            Console.WriteLine("please enter a string");
+            string sen=Console.ReadLine();
+            Console.WriteLine("if u want to convert it to Upper case enter #1");
+            Console.WriteLine("if u want to convert it to Lower case enter #2");
+            Console.WriteLine("if u want to convert it to print it enter #3");
+
+            int option=int.Parse(Console.ReadLine());
+
+            switch(option)
+            {
+                case 1:
+                    Console.WriteLine(sen.ToUpper());
+                    break;
+                case 2:
+                    Console.WriteLine(sen.ToLower());
+                    break;
+                case 3:
+                    Console.WriteLine(sen);
+                    break;
+                default: 
+                    Console.WriteLine("un valid optiion");
+                    break;
+            }
+            */
+
+            //LECTURE 26
+
+            /*
+            int[] numbers = { 1, 2, 33, 2, 62 };
+            double ang =Calc_Average_Nums(numbers,false,true);            //First Way
+            double AVG = Calc_Average_Nums(numbers, PrintSum: true);       //Second Way
+            Console.WriteLine($"the Average from the main =\t{ang}");
+            Console.WriteLine($"the Average from the main =\t{AVG}");
+            */
+
+
+            //Lecture 27
+            /*
+            int[] eng_scores = { 33, 23, 40, 50, 49 };
+            double eng_avg = Calc_Average_Nums(eng_scores,true, true);
+            */
+
+
+            //Lecture 28
+
+
+            /*
+             
+            Console.Write("please enter the number of items you want to make calculations on them:\t");
+            int arrSize = int.Parse(Console.ReadLine());
+            int[] nums = new int[arrSize];
+            int i = 0;
+            for (;i < arrSize;i++)
+            {
+                Console.Write($"please enter the item number {i+1}:\t");
+                nums[i] = int.Parse(Console.ReadLine());
+
+            }
+            Print_Arr(nums);
+
+            int small=Find_SmaLLestNum(nums);
+            Console.WriteLine($"The smallest number in the array is =\t{small}");
+
+            int biggest = Find_GreatesttNum(nums);
+            Console.WriteLine($"The Greatest number in the array is =\t{biggest}");
+
+            Calc_Average_Nums(nums,true);
+            */
+
+
+
+
+            // Lecture 30
+
+
+            /*
+            Console.WriteLine("please enter a word to check if it is palindrome or not?");
+            string wordd = Console.ReadLine();
+            char[] worda = new char[wordd.Length];
+
+            for (int i=0;i<worda.Length;i++)
+            {
+                worda[i] = wordd[i];
+            }
+
+            for (int i = 0; i < worda.Length; i++)
+            {
+                Console.Write(worda[i]);
+            }
+
+
+            //Console.WriteLine();
+
+
+            //char[] palindrom = new char[worda.Length];
+            //bool IS_palin = false;
+
+            //for (int i = 0; i < worda.Length; i++)
+            //{
+            //    palindrom[i] = worda[i];
+            //}
+
+            //for (int i = 0; i < worda.Length; i++)
+            //{
+
+
+            //    if (palindrom[(worda.Length - i - 1)] == worda[i])
+            //    {
+            //        IS_palin = true;
+            //    }
+            //    else
+            //    {
+            //        IS_palin = false;
+            //        break;
+            //    }
+
+
+
+            //}
+
+
+            //if (IS_palin == true)
+            //    Console.WriteLine("the Word is Palindrome");
+            //else
+            //    Console.WriteLine("the Word is NOT Palindrome");
+
+
+
+            bool tof = IS_Palindrome(worda);
+
+            //if (tof == true)
+            //    Console.WriteLine("palindrom");
+            //else
+            //    Console.WriteLine("Non Palindrome");
+            */
+
+
+
+
+            // Lecture 31
+
+
+            //Lecture 32
+
+
+
+            //Lecture 33
+
+            /*
+            string str = "Hello MR {0}, My name is {1}";
+            Console.WriteLine(str);
+            str = string.Format(str, "A7AA", "3MK Cost@");
+            Console.WriteLine(str);
+            double slas = 10000.5;
+            string str2 = "i'm {0}, and my salary is {1:C8}";
+            str2 = string.Format(str2, "ENG.Costa", slas);
+            Console.WriteLine(str2);
+            */
+
+
+
+            //Lecture 34
+
+
+
+            /*
+            Console.WriteLine("please enter a series of nums with separate k letter");
+            string stt = Console.ReadLine();
+
+            string[] sttNum = stt.Split("k");
+            int sum = 0;
+            for(int i=0;i<sttNum.Length;i++ )
+            {
+                sum += int.Parse(sttNum[i]);
+            }
+
+            Console.WriteLine($"Sum is =\t{sum}");
+
+
+            string[] sba7 = { "sba70", "ya", "Costa" };
+            string sb = string.Join(" ", sba7);
+            Console.WriteLine(sb);
+            */
+
+
+            //Lecture 35
+
+            /*
+            StringBuilder sb = new StringBuilder(4069);
+            Console.WriteLine($"the length of StringBuilder =\t{ sb.Length}");
+            Console.WriteLine($"the Capacity of StringBuilder =\t{ sb.Capacity}");
+            Console.WriteLine($"the MaxCapacity of StringBuilder =\t{ sb.MaxCapacity}");
+
+            sb.Append("Hello ");
+            sb.Append("ya ");
+            sb.AppendLine("M3rtheen ");
+            sb.Append("3MK ");
+            sb.Append("Costa");
+
+            Console.WriteLine($"the length of StringBuilder =\t{sb.Length}");
+            Console.WriteLine($"the Capacity of StringBuilder =\t{sb.Capacity}");
+            Console.WriteLine($"the MaxCapacity of StringBuilder =\t{sb.MaxCapacity}");
+
+            Console.WriteLine(sb.ToString());
+            */
+
+
+            //Lecture 36
+
+
+
+            //Lecture 37
+
+
+            /*
+            Student Ahmed= new Student();
+            Student Costa= new Student();
+
+            Console.Write("enter your name");
+            Ahmed.Name = Console.ReadLine();
+            Console.Write("enter your Phone Number");
+            Ahmed.PhoneNumber = Console.ReadLine();
+            Console.Write("enter your Address");
+            Ahmed.Address = Console.ReadLine();
+
+
+            Student[] studentSS= new Student[5];
+            studentSS[0] = Ahmed;
+            studentSS[1] = Costa;
+            */
+
+
+            //Lecture 38
+
+
+            /*
+            Student Costa = new Student("Abdo","01154202525","Zaki hawwas");
+
+            Console.WriteLine($"first name:\t{Costa.Name}");
+            Console.WriteLine($"first PhoneNumber:\t{Costa.PhoneNumber}");
+            Console.WriteLine($"first Address:\t{Costa.Address}");
+
+            */
+
+
+            //Lecture 39
+
+
+            /*
+            Student s1 = new Student { Name="Costa"};
+            Console.WriteLine(s1.Name);
+            Console.WriteLine(s1.PhoneNumber);
+            s1.PhoneNumber = "01254566";
+            Console.WriteLine(s1.Address);
+            Console.WriteLine(s1.PhoneNumber);
+            s1.Address = "MMMMMMMMMMFFFf";
+            Console.WriteLine(s1.Address);
+            //s1.Name = "jooo";
+
+            */
+
+
+            //Lecture 40
+
+
+            //Lecture 41
+
+
+            /*
+            var student1 = new Student();
+            */
+
+            
+
+
+            //Lecture 42
+
+
+
+            //Lecture 43
+
+
+
+            //Lecture 44
+
+
+
+
+            //Lecture 45
+
+
+
+
+
+
+
 
 
 
@@ -173,5 +683,116 @@ namespace formLec_9
 
 
         }
+
+        /// <summary>
+        /// method to calculate the sum and return the average of array os nums
+        /// </summary>
+        /// <param name="j">the array of nums we calculate it's anerage</param>
+        /// <param name="PrintAvg">Printing Average or not</param>
+        /// <param name="PrintSum">Printing Sum or not</param>
+        /// <returns> returns the average value</returns>
+        static double Calc_Average_Nums(int[] j, bool PrintAvg=false , bool PrintSum=false)
+        {
+            double sum=0.0;
+            bool print = PrintAvg;
+            bool Psum = PrintSum;
+            foreach(int i in j)
+            {
+                sum+=i;
+            }
+            if (PrintAvg == true)
+                Console.WriteLine($"the average of the array =\t{sum / j.Length}");
+            if (Psum == true)
+                Console.WriteLine($"the sum of nums is =\t{sum}");
+            
+            return sum / j.Length;
+        }
+
+        /// <summary>
+        /// Method to print an array
+        /// </summary>
+        /// <param name="a2">the array u want to print</param>
+        static void Print_Arr(int[]a2)
+        {
+            int i = 0;
+            foreach (int item in a2)
+                Console.WriteLine($"the item #{++i}=\t {item}");
+        }
+
+        /// <summary>
+        /// Method to find the smallest number of an array
+        /// </summary>
+        /// <param name="k5">the array we want to seach on it</param>
+        /// <returns>return the smallest item value</returns>
+        static int Find_SmaLLestNum(int[] k5)
+        {
+            int small = k5[0];
+            foreach(int item in k5)
+            {
+                if (small > item)
+                    small = item;
+            }
+
+            return small;
+        }
+
+        /// <summary>
+        /// Method to find the greatest number of an array
+        /// </summary>
+        /// <param name="k6">the array we want to seach on it</param>
+        /// <returns>return the Greatest item value</returns>
+        static int Find_GreatesttNum(int[] k6)
+        {
+            int big = k6[0];
+            foreach (int item in k6)
+            {
+                if (big < item)
+                    big = item;
+            }
+
+            return big;
+        }
+
+        /// <summary>
+        /// Method to check if the word is palindrome or not
+        /// </summary>
+        /// <param name="word">the word array you want to check it</param>
+        /// <returns>return true if it palindrome and false if it not</returns>
+        static bool IS_Palindrome(char[] word)
+        {
+            char[] palindrom = new char[word.Length];
+            bool IS_palin = false;
+
+            for (int i = 0; i < word.Length; i++)
+            {
+                palindrom[i] = word[i];
+            }
+            
+
+            for (int i=0 ; i<word.Length ; i++)
+            {
+                
+               if (palindrom[(word.Length-i-1)] == word[i])
+                {
+                    IS_palin = true;
+                }
+               else
+                {
+                        IS_palin = false;
+                        break;
+                }
+
+                
+            }
+
+
+            if (IS_palin == true)
+                Console.WriteLine("the Word is Palindrome");
+            else
+                Console.WriteLine("the Word is NOT Palindrome");
+
+            return IS_palin;
+        }
+
     }
 }

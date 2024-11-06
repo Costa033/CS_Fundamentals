@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "CSharp_Fundamentals.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CSharp_Fundamentals.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CSharp_Fundamentals.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CSharp_Fundamentals.Core/1.0.0": {
+      "type": "project",
+      "path": "../CSharp_Fundamentals.Core/CSharp_Fundamentals.Core.csproj",
+      "msbuildProject": "../CSharp_Fundamentals.Core/CSharp_Fundamentals.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "CSharp_Fundamentals.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Costa\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "H:\\courses\\Programming\\WayToDotNet\\C#\\fundamentals\\CS_Fundamentals\\CS_fund\\CSharp_Fundamentals.Core\\CSharp_Fundamentals.Core.csproj": {
+              "projectPath": "H:\\courses\\Programming\\WayToDotNet\\C#\\fundamentals\\CS_Fundamentals\\CS_fund\\CSharp_Fundamentals.Core\\CSharp_Fundamentals.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
