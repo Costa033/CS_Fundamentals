@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "formLec_9/1.0.0": {
+        "dependencies": {
+          "CSharp_Fundamentals.Core": "1.0.0"
+        },
+        "runtime": {
+          "formLec_9.dll": {}
+        }
+      },
+      "CSharp_Fundamentals.Core/1.0.0": {
+        "runtime": {
+          "CSharp_Fundamentals.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "formLec_9/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSharp_Fundamentals.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

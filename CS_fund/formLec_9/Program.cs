@@ -7,10 +7,57 @@ using System.Transactions;
 
 using CSharp_Fundamentals.Core;
 
+
+
 namespace formLec_9
 {
     internal class Program
     {
+
+        public enum gender
+        {
+            Male = 3, 
+            female,
+        }
+
+        public enum colorz
+        {
+            white=32, 
+            black, 
+            yellow,
+            orange, 
+            lelaah
+        }
+
+        /*
+        public enum weekdays
+        {
+            saturday,
+            sunday, monday,
+            tuesday, wendesday,
+                thursday=33, friday,
+                
+
+        }
+
+        */
+
+
+
+        [Flags]
+        public enum WeekDays
+        {
+            None        = 0b_0000_0000,              //0,       
+            saturday    = 0b_0000_0010,              //1,
+            monday      = 0b_0000_0100,              //2,
+            tuesday     = 0b_0000_1000,              //4,
+            wendesday   = 0b_0001_0000,              //8,
+            thursday    = 0b_0010_0000,              //16,
+            friday      = 0b_0100_0000,              //32,
+        }
+
+
+
         static void Main(string[] args)
         {
             /*
@@ -651,7 +698,7 @@ namespace formLec_9
             var student1 = new Student();
             */
 
-            
+
 
 
             //Lecture 42
@@ -670,6 +717,592 @@ namespace formLec_9
             //Lecture 45
 
 
+            /*
+            // REF
+            bool Successful = true;
+            var Resault = divideREF(10, 0, ref Successful);
+            Console.WriteLine($"result=\t{Resault}");
+            Console.WriteLine($"IsSucessful=\t{Successful}");
+
+            Console.WriteLine("******************************************");
+            //OUT
+            bool Successful3 = true;
+            var Resault2 = divideOUT(10, 0, out Successful3);
+            Console.WriteLine($"result=\t{Resault}");
+            Console.WriteLine($"IsSucessful=\t{Successful}");
+
+            Console.WriteLine("******************************************");
+
+            Console.Write("please enter a num:\t");
+            var Numerical_Input = int.TryParse(Console.ReadLine(), out int number);    //TryParse is very important Method
+            Console.WriteLine($"Numerical_Input=\t{Numerical_Input}");
+            Console.WriteLine($"number=\t{number}");
+
+            */
+
+
+            //Lecture 46
+
+
+            /*
+            try
+            {
+
+                Console.WriteLine(divide(10, 5));
+                Console.WriteLine(divide(10, 0));
+
+                Console.WriteLine("sba700");
+            }
+
+            catch (Exception ex) 
+            {
+                Console.WriteLine("you divided on Zero0o ya ngm");
+                Console.ForegroundColor= ConsoleColor.Red;
+                Console.WriteLine(ex.ToString());
+                Console.ForegroundColor= ConsoleColor.White;
+            }
+            Console.WriteLine("sba700");
+            Console.WriteLine("sba700");
+
+
+            try
+            {
+                Console.WriteLine("please enter a num");
+                int num = int.Parse(Console.ReadLine());
+                Console.WriteLine($"Num=\t{num}");
+            }
+            catch(Exception ex) 
+            {
+                Console.WriteLine("u didn't write a number");
+            }
+
+            Console.WriteLine("sba700*****************************************************\n\n");
+
+
+
+            // WE MADE THE EXCEPTION
+
+            Console.WriteLine("please enter 5 letters");
+            string g=Console.ReadLine();
+
+            try
+            {
+                if (g.Length != 5)
+                    throw new Exception("you must enter 5 letters");
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor= ConsoleColor.Green;
+                Console.WriteLine(ex.ToString() );
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            */
+
+
+
+
+            //Lecture 47
+
+
+            //gender gender1= gender.Male;
+            // gender gender12= gender.female;
+
+            // Console.WriteLine($"{gender1.ToString()} is =\t {(int)gender1}");
+
+
+
+            /* foreach(var coloz in Enum.GetNames(typeof(colorz)) )
+             {
+                 Console.WriteLine($"{coloz} =\t{(int)Enum.Parse(typeof(colorz), coloz)}");
+             }
+
+             string colorName = "BlaCk";
+              colorz c33 = (colorz)Enum.Parse(typeof(colorz), colorName, true);
+              Console.WriteLine($"{c33} = {(int)c33}");
+             */
+
+            /*
+            while(true){
+                Console.WriteLine("please choose an option:");
+                Console.WriteLine("[1] change background color\t\t\t[2] change foreground color");
+                string selectedOption = Console.ReadLine();
+
+                foreach (var col in Enum.GetNames(typeof(ConsoleColor)))                   // GetNames
+                {
+                    Console.WriteLine($"{col} =  {(int)Enum.Parse(typeof(ConsoleColor), col)}");
+                }
+
+                Console.WriteLine($"select the color you want");
+                string colNum = Console.ReadLine();
+
+
+                ConsoleColor cl = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), colNum, true);
+
+                if (int.Parse(selectedOption) == 1)
+                    Console.BackgroundColor = cl;
+                else if (int.Parse(selectedOption) == 2)
+                    Console.ForegroundColor = cl;
+                else
+                    Console.WriteLine("invalid Option");
+
+                Console.WriteLine("this message is a test for color change");
+            }
+
+            */
+
+
+            //  RRRRREEEEEEEVVVVVVIIIIIIISSSSSSSSSSSSSIIIIIIIIIIIIOOOOOOOOOOOOOOOON
+            //REvision 47
+
+
+            /*
+            weekdays day1 = weekdays.friday;
+
+            Console.WriteLine($"{day1.ToString()} = {(int)day1}");
+
+
+            // LOOP
+
+            foreach(var days in Enum.GetNames(typeof(weekdays)))
+            {
+                Console.WriteLine($"{days} = {(int)Enum.Parse(typeof(weekdays), days)}");
+            }
+
+            Console.WriteLine("*****************************************\n\n");
+            string Search_day = "ThuRsday";
+
+            //weekdays day2 = (weekdays)Enum.Parse(typeof(weekdays), Search_day);   // kda lw katb elyoum with upper case m4 hy4taghal
+            weekdays day2 = (weekdays)Enum.Parse(typeof(weekdays), Search_day,true);    // kda lw katb elyoum with upper case  hy4taghal 3la tooooool
+
+            Console.WriteLine($"{day2.ToString()} = {(int) day2}");
+
+
+            // From User
+            Console.Write("please enter a day u want to search for:\t");
+            string S_D = Console.ReadLine();
+
+            weekdays day33 = (weekdays)Enum.Parse(typeof(weekdays), S_D, true);
+            Console.WriteLine($"The day you search for is {day33} = {(int)day33}");
+
+
+
+            Console.WriteLine("\n\n*****************************************\n");
+
+            while (true)
+            {
+                Console.WriteLine("Choose one Choice\n [1] change background clolr\t\t\t\t[2] change foreground color");
+                int UserChoice = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Here are the colors we can change to it:");
+
+                foreach (var color in Enum.GetNames(typeof(ConsoleColor)))
+                {
+                    Console.WriteLine($"{color} = {(int)Enum.Parse(typeof(ConsoleColor), color)}");
+                }
+
+                Console.Write("please enter a color name: ");
+                string SelectedColor = Console.ReadLine();
+
+                ConsoleColor NewColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), SelectedColor, true);
+
+                if (UserChoice == 1)
+                    Console.BackgroundColor = NewColor;
+
+                else if (UserChoice == 2)
+                    Console.ForegroundColor = NewColor;
+                else
+                    Console.WriteLine("Invalid option");
+
+            }
+            */
+
+            //Lecture 48
+
+
+            /*
+            WeekDays d1 = WeekDays.friday | WeekDays.saturday;
+            Console.WriteLine(d1);
+
+            WeekDays d2 = WeekDays.tuesday | WeekDays.thursday;
+
+            WeekDays d3 = (d1 | d2);
+            Console.WriteLine(d3);
+
+            WeekDays d4 = d3 & WeekDays.friday;
+            Console.WriteLine(d4);
+
+            Console.WriteLine(d2 & ~WeekDays.friday &~WeekDays.tuesday);
+
+            Console.WriteLine(d3 ^ WeekDays.wendesday);
+            Console.WriteLine(d3 ^ WeekDays.wendesday^WeekDays.thursday);
+            */
+
+
+
+
+            //Lecture 49
+
+
+            /*
+            while (true)
+            {
+                Console.Write("[1] Generate random numbers\t\t\t\t[2]Generate random string\nPlease choose:\t");
+                var select = Console.ReadLine();
+
+                if (int.Parse(select) == 1)
+                    GenerateRandomNumber();
+                else if (int.Parse(select) == 2)
+                    GenerateRandomString();
+                else
+                {
+                    Console.WriteLine("Invalid option");
+                    break;
+                }
+                Console.WriteLine("************************************************");
+            }
+            */
+
+
+            // Assignment of lecture 49
+            /*
+            while(true)
+            {
+
+            
+            Console.Write("[1] Generate random numbers\t\t\t\t[2]Generate random string\nPlease choose:\t");
+            var select = Console.ReadLine();
+
+            if (int.Parse(select) == 1)
+            {
+                int mn, mx;
+                Console.Write("enter the minimum value:\t");
+                mn = int.Parse(Console.ReadLine());
+                Console.Write("enter the Maximum value:\t");
+                mx = int.Parse(Console.ReadLine());
+                GenerateRandomNumberUserDefined(mn, mx);
+
+            }
+            else if (int.Parse(select) == 2)
+            {
+                Console.Write("please enter the string length:\t");
+                int LengthString=int.Parse(Console.ReadLine());
+                    if(LengthString<=0)
+                    {
+                        Console.WriteLine("Can't generate a string with zero or negative number of letters");
+                        break;
+                    }
+
+                   
+
+                    Console.Write("Do you want the string include Capital letters? (true OR false)");
+                    bool CapitalL=bool.Parse(Console.ReadLine());
+                    Console.Write("Do you want the string include Small letters? (true OR false)");
+                    bool Smallle = bool.Parse(Console.ReadLine());
+                    Console.Write("Do you want the string include Numbers? (true OR false)");
+                    bool Numbersss = bool.Parse(Console.ReadLine());
+                    Console.Write("Do you want the string include Symbols? (true OR false)");
+                    bool Symbools = bool.Parse(Console.ReadLine());
+
+                    GenerateRandomStringUserDefined(LengthString,CapitalL,Smallle,Numbersss,Symbools);
+            }
+            else
+            {
+                Console.WriteLine("Invalid option");
+                break;
+            }
+            Console.WriteLine("************************************************");
+
+
+            }
+
+            */
+
+
+
+            //Lecture 50
+
+
+            /*
+            while (true)
+            {
+                Console.Write(">>>");
+                var Input = Console.ReadLine().Trim();
+                var SpaceLocation = Input.IndexOf(' ');
+
+                var Command = Input.Substring(0, SpaceLocation).ToLower();
+                var Path = Input.Substring(SpaceLocation + 1).Trim();
+
+                Console.WriteLine(Command);
+                Console.WriteLine(Path);
+
+
+                if(Command=="list")
+                {
+                    Console.WriteLine("The Directories:");
+                    foreach(var Dir in Directory.GetDirectories(Path))
+                    {
+                        Console.WriteLine(Dir);
+                    }
+
+                    Console.WriteLine("The Files:");
+                    foreach (var Dir in Directory.GetFiles(Path))
+                    {
+                        Console.WriteLine(Dir);
+                    }
+                }
+
+
+                else if(Command=="info")
+                {
+                    if (Directory.Exists(Path))
+                    {
+                        var DirInfo = new DirectoryInfo(Path);
+                        Console.WriteLine("Path is For Directory" );
+                        Console.WriteLine($"Creation time : {DirInfo.CreationTime}" );
+                        Console.WriteLine($"Last write time in : {DirInfo.LastWriteTime}" );
+                      
+                    }
+
+                    else if (File.Exists(Path))
+                    {
+                        var FileeInfo = new FileInfo(Path);
+                        Console.WriteLine("Path is For File");
+                        Console.WriteLine($"Creation time : {FileeInfo.CreationTime}");
+                        Console.WriteLine($"Last write time in : {FileeInfo.LastWriteTime}");
+                        Console.WriteLine($"Size in bytes : {FileeInfo.Length}");
+
+                    }
+                    else
+                        Console.WriteLine("the Path is not Right!!!");
+
+
+                }
+
+
+                else if (Command == "mkdir")
+                {
+                    Directory.CreateDirectory(Path);
+                }
+
+
+
+                else if (Command == "print")
+                {
+                    var texto=File.ReadAllText(Path);
+                    Console.WriteLine(texto);
+                }
+
+
+
+                else if (Command == "write")
+                {
+                    File.WriteAllText(Path, "mayten elle faaat");
+                }
+
+
+                else if (Command == "append")
+                {
+                    File.AppendAllText(Path,"a777laa msa 3leke");
+                }
+
+
+                else if (Command == "remove")
+                {
+                    if(Directory.Exists(Path))
+                        Directory.Delete(Path);
+                    if(File.Exists(Path))
+                        File.Delete(Path);
+                }
+
+
+                else if (Command=="exit")
+                {
+                    break;
+                }
+
+
+
+            }
+
+
+            */
+
+
+
+            //Lecture 51
+
+
+            while (true)
+            {
+                Console.WriteLine("please enter math expresion");
+                var input = Console.ReadLine();
+                var expr = ExpressionParser.Parsez(input);
+                Console.WriteLine($"Left side=   {expr.LeftSideOperand}\t\t \t\t the operation is:  {expr.Symbol}\t\t \t the right side:  {expr.RightSideOperand}");
+
+
+                Console.WriteLine($" {input} = {Evaluate_Expresion(expr)}");
+            
+            }
+
+
+
+
+
+
+        }
+
+
+
+        static public double Evaluate_Expresion(ExpressionOperands input)
+        {
+
+            //Addition
+            if(input.Symbol==OperationSymbols.addition)
+            {
+                return input.LeftSideOperand + input.RightSideOperand;
+            }
+
+            //Subtraction
+            else if (input.Symbol == OperationSymbols.subtraction)
+            {
+                return input.LeftSideOperand - input.RightSideOperand;
+            }
+
+            //Multiblication
+            else if (input.Symbol == OperationSymbols.multiblication)
+            {
+                return input.LeftSideOperand * input.RightSideOperand;
+            }
+
+            //Division
+            else if (input.Symbol == OperationSymbols.division)
+            {
+                return input.LeftSideOperand / input.RightSideOperand;
+            }
+
+            //Modulus
+            else if (input.Symbol == OperationSymbols.modulus)
+            {
+                return input.LeftSideOperand % input.RightSideOperand;
+            }
+
+
+            //Power
+            else if (input.Symbol == OperationSymbols.power)
+            {
+                return Math.Pow(input.LeftSideOperand,input.RightSideOperand);
+            }
+
+
+            //Sin
+            else if (input.Symbol == OperationSymbols.sin)
+            {
+                return Math.Sin(input.RightSideOperand);
+            }
+
+
+            //Cos
+            else if (input.Symbol == OperationSymbols.cos)
+            {
+                return Math.Cos(input.RightSideOperand);
+            }
+
+
+            //Tan
+            else if (input.Symbol == OperationSymbols.tan)
+            {
+                return Math.Tan(input.RightSideOperand);
+            }
+
+
+            return 0;
+        }
+
+
+
+
+
+        private const string Buffer = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+        private const string BufferMain = "abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ,0123456789,!@#$%^&*()_+";
+
+
+        static void GenerateRandomString()
+        {
+            var rnd = new Random();
+            var StringBuilder_16 = new StringBuilder();
+
+            for (int i = 0; i < 16; i++)
+            {
+                var rnd_Index = rnd.Next(0, (Buffer.Length - 1));
+                StringBuilder_16.Append(Buffer[rnd_Index]);
+            }
+
+
+            Console.WriteLine($"Random string is : {StringBuilder_16}");
+
+        }
+
+        private static void GenerateRandomStringUserDefined(int stringLength,bool CapitalL,bool Smalll, bool Nums,bool Symbols)
+        {
+            var stRnd=new StringBuilder();
+            var rndom = new Random();
+            string[] Mchoices=BufferMain.Split(",");
+
+            var ChoosedBuffer = new StringBuilder();
+            if (CapitalL)
+            {
+                ChoosedBuffer.Append(Mchoices[1]);
+
+            }
+            if (Smalll)
+            {
+                ChoosedBuffer.Append(Mchoices[0]);
+
+            }
+            if (Nums)
+            {
+                ChoosedBuffer.Append(Mchoices[2]);
+
+            }
+            if (Symbols)
+            {
+                ChoosedBuffer.Append(Mchoices[3]);
+
+            }
+
+            for (int i=0;i<stringLength;i++)
+            {
+                var rndomSelect=rndom.Next(0, (ChoosedBuffer.Length-1));
+                stRnd.Append(ChoosedBuffer[rndomSelect]);
+            }
+
+            
+
+            
+            Console.WriteLine($"the string Generated:\t{stRnd}");
+        }
+
+        private static void GenerateRandomNumberUserDefined(int minValue, int maxValue)
+        {
+            var rnd = new Random();
+            var Value = rnd.Next(minValue, maxValue);
+            Console.WriteLine($"the random value =\t  {Value}");
+
+        }
+
+        static void GenerateRandomNumber()
+        {
+            var rnd = new Random();
+            var value = rnd.Next(1000, 9999);
+            Console.WriteLine($"Random Number : {value}");
+        }
+
+
+
+
+
+
+        
 
 
 
@@ -681,7 +1314,33 @@ namespace formLec_9
 
 
 
+        static double divide(int a, int b)
+        {
+            return a / b;
+        }
 
+        static double divideREF(double dividend, double divisor, ref bool IS_successful)
+        {
+            if(divisor == 0)
+            {
+                Console.WriteLine("Can't divide on Zero");
+                IS_successful = false;
+                return 0;
+            }
+            IS_successful= true;
+            return dividend / divisor;
+        }
+
+        static double divideOUT(double dividend, double divisor, out bool IS_successful)
+        {
+            if (divisor == 0)
+            {
+                Console.WriteLine("Can't divide on Zero");
+                IS_successful = false;
+                return 0;
+            }
+            IS_successful = true;
+            return dividend / divisor;
         }
 
         /// <summary>

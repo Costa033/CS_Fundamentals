@@ -13,3 +13,6 @@ H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\formL
 H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\formLec_9\obj\Debug\net7.0\formLec_9.pdb
 H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\formLec_9\obj\Debug\net7.0\formLec_9.genruntimeconfig.cache
 H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\formLec_9\obj\Debug\net7.0\ref\formLec_9.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\formLec_9\bin\Debug\net7.0\CSharp_Fundamentals.Core.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\formLec_9\bin\Debug\net7.0\CSharp_Fundamentals.Core.pdb
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\formLec_9\obj\Debug\net7.0\formLec_9.csproj.CopyComplete

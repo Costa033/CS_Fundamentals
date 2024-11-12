@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace formLec_9
 {
-    internal class Models_Student
+    public enum OperationSymbols
     {
+        None,
+        addition,subtraction,multiblication,division,
+        modulus,power,
+        sin,cos,tan
     }
 }

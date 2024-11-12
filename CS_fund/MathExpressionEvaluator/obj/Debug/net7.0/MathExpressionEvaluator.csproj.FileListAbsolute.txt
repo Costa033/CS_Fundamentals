@@ -1,0 +1,15 @@
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\bin\Debug\net7.0\MathExpressionEvaluator.exe
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\bin\Debug\net7.0\MathExpressionEvaluator.deps.json
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\bin\Debug\net7.0\MathExpressionEvaluator.runtimeconfig.json
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\bin\Debug\net7.0\MathExpressionEvaluator.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\bin\Debug\net7.0\MathExpressionEvaluator.pdb
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.csproj.AssemblyReference.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.GeneratedMSBuildEditorConfig.editorconfig
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.AssemblyInfoInputs.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.AssemblyInfo.cs
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.csproj.CoreCompileInputs.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\refint\MathExpressionEvaluator.dll
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.pdb
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\MathExpressionEvaluator.genruntimeconfig.cache
+H:\courses\Programming\WayToDotNet\C#\fundamentals\CS_Fundamentals\CS_fund\MathExpressionEvaluator\obj\Debug\net7.0\ref\MathExpressionEvaluator.dll

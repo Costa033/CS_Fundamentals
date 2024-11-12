@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "formLec_9", "formLec_9\formLec_9.csproj", "{EFFA1676-37FD-4012-9A13-8110992007A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Fundamentals.Core", "CSharp_Fundamentals.Core\CSharp_Fundamentals.Core.csproj", "{9DE39362-719C-4264-AB0A-D5D516EDF164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_Fundamentals.Core", "CSharp_Fundamentals.Core\CSharp_Fundamentals.Core.csproj", "{9DE39362-719C-4264-AB0A-D5D516EDF164}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
